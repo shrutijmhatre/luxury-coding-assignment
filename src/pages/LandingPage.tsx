@@ -23,10 +23,13 @@ import Image22 from "../assets/Image22.jpg";
 // import Image24 from "../assets/Image24.jpg";
 import Image25 from "../assets/Image25.jpg";
 import Carousel, { ImageInputType } from "../components/carousel";
-import Slideshow from "../components/slideshow";
+//import Slideshow from "../components/slideshow";
 import Location from "../assets/location.webp";
 import Logo from "../assets/logo.png";
 import Bg2 from "../assets/bg2.jpg";
+import { lazy } from "react";
+
+const Slideshow = lazy(() => import("../components/slideshow"));
 
 const LandingPage = () => {
   const bannerImages = [Image21, Image22, Image10];
