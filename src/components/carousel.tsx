@@ -39,7 +39,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, interval = 3000 }) => {
             className="h-full flex-shrink-0"
             style={{ flexBasis: "100%" }}
           >
-            <div className="flex flex-col items-center md:flex-row-reverse md:m-10 md:gap-5">
+            <div className="flex flex-col items-center md:flex-row-reverse md:mx-10 md:gap-5">
               <img
                 src={image.img2}
                 alt={`Slide ${index}`}
@@ -51,15 +51,16 @@ const Carousel: React.FC<CarouselProps> = ({ images, interval = 3000 }) => {
                   alt={`Slide ${index}`}
                   className="object-cover"
                 />
-                <p className="font-domine text-3xl font-semibold tracking-wider uppercase py-2 italic text-[#975632]">
-                  {image.text}
+                <p className="font-domine text-3xl font-semibold tracking-wider uppercase py-2  text-[#975632]">
+                  <span className="italic">{image.text}</span>
+                  &nbsp;villas
                 </p>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="flex justify-center my-2 space-x-3">
+      <div className="flex justify-center my-2 md:mt-6 space-x-3">
         {images.map((_, index) => (
           <button
             key={index}

@@ -1,5 +1,5 @@
-/* import Image1 from "../assets/Image1.jpg";
-import Image2 from "../assets/Image2.jpg"; */
+import Image1 from "../assets/Image1.jpg";
+// import Image2 from "../assets/Image2.jpg";
 import Image3 from "../assets/Image3.jpg";
 /* import Image4 from "../assets/Image4.jpg";
 import Image5 from "../assets/Image5.jpg";
@@ -20,7 +20,7 @@ import Image20 from "../assets/Image20.jpg";
 import Image21 from "../assets/Image21.jpg";
 import Image22 from "../assets/Image22.jpg";
 // import Image23 from "../assets/Image23.jpg";
-import Image24 from "../assets/Image24.jpg";
+// import Image24 from "../assets/Image24.jpg";
 import Image25 from "../assets/Image25.jpg";
 import Carousel, { ImageInputType } from "../components/carousel";
 import Slideshow from "../components/slideshow";
@@ -30,11 +30,11 @@ import Logo from "../assets/logo.png";
 const LandingPage = () => {
   const bannerImages = [Image21, Image22, Image10];
   const images: ImageInputType[] = [
-    { img1: Image20, img2: Image18, text: "3-bedroom townhouses" },
-    { img1: Image17, img2: Image14, text: "4-bedroom villas" },
-    { img1: Image14, img2: Image15, text: "5-bedroom villas" },
-    { img1: Image3, img2: Image10, text: "6-bedroom villas" },
-    { img1: Image8, img2: Image3, text: "7-bedroom villas" },
+    { img1: Image20, img2: Image18, text: "3-bedroom" },
+    { img1: Image17, img2: Image14, text: "4-bedroom" },
+    { img1: Image14, img2: Image15, text: "5-bedroom" },
+    { img1: Image3, img2: Image10, text: "6-bedroom" },
+    { img1: Image8, img2: Image3, text: "7-bedroom" },
   ];
 
   return (
@@ -81,7 +81,7 @@ const LandingPage = () => {
       </div>
       <div className="flex flex-col md:gap-4 lg:gap-8 md:flex-row m-5 md:m-10">
         <div className="h-full md:w-2/3">
-          <img src={Image24} alt="pool_side" className="w-full h-full" />
+          <img src={Image1} alt="pool_side" className="w-full h-full" />
         </div>
         <div className="flex flex-col md:w-1/2 gap-4 px-4 py-6 items-center md:items-start">
           <p className="text-sm md:text-xl p-4">
