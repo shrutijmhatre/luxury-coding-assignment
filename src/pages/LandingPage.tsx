@@ -26,6 +26,7 @@ import Carousel, { ImageInputType } from "../components/carousel";
 import Slideshow from "../components/slideshow";
 import Location from "../assets/location.webp";
 import Logo from "../assets/logo.png";
+import Bg2 from "../assets/bg2.jpg";
 
 const LandingPage = () => {
   const bannerImages = [Image21, Image22, Image10];
@@ -64,7 +65,10 @@ const LandingPage = () => {
       </div>
 
       <div className="flex flex-col-reverse md:flex-row m-5 md:m-10">
-        <div className="flex items-center md:w-1/2 bg-[url('src/assets/bg2.jpg')] bg-no-repeat bg-cover p-10 text-sm md:text-xl font-semibold">
+        <div
+          style={{ backgroundImage: `url(${Bg2})` }}
+          className="flex items-center md:w-1/2 bg-no-repeat bg-cover p-10 text-sm md:text-xl font-semibold"
+        >
           <p>
             Starting from AED 4.18M, these elegant homes feature sleek modern
             architecture and inviting open-plan interiors with double-height
